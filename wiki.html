@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Ciberseguridad</title>
+<style>
+    :root {
+        --primary-color: #007bff;
+        --text-color: #666;
+        --link-color: #007bff;
+        --link-hover-color: #0056b3;
+        --background-color: #456fa5;
+        --container-max-width: 1200px;
+        --content-padding: 20px;
+        --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+    }
+    
+    .container {
+        max-width: var(--container-max-width);
+        margin: 0 auto;
+        padding: var(--content-padding);
+        display: flex;
+    }
+    
+    header {
+        background-color: var(--primary-color);
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    /* Estilos para la tabla de contenidos */
+    .toc {
+        width: 250px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        position: fixed;
+        top: 0px;
+        left: 20px;
+        height: calc(100vh - 20px); /* Ajusta este valor según sea necesario */
+        overflow-y: auto; /* Permite el desplazamiento vertical */
+        display: flex;
+        flex-direction: column;
+    }
+    .toc h2 {
+        color: #333;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-size: 1.6rem;
+    }
+    .toc ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .toc li {
+        margin-bottom: auto; /* Distribuir espacio uniformemente */
+        padding: 10px 0; /* Añadir padding para más espacio entre elementos */
+    }
+    .toc a {
+        text-decoration: none;
+        color: #666;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+    .toc a:hover {
+        color: #333;
+    }
+
+    /* Estilos para el contenido principal */
+    .main-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        flex-grow: 1;
+        margin-left: 300px; /* Ajusta este valor según sea necesario */
+    }
+    
+    h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    
+    p {
+        color: var(--text-color);
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 20px auto;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+    }
+    
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: var(--link-hover-color);
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        .toc {
+            position: static;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+            height: auto;
+            overflow-y: visible;
+        }
+        .main-content {
+            margin-left: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .container {
+            padding: 0 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="toc">
+       
+        <ul>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#conceptos">Conceptos</a></li>
+            <li><a href="#tecnologias">Tecnologías y Herramientas</a></li>
+            <li><a href="#politicas">Políticas y Procedimientos</a></li>
+            <li><a href="#incidentes">Procedimientos de Incidentes</a></li>
+            <li><a href="#educacion">Educación y Formación</a></li>
+            <li><a href="#empresas">Políticas en la Empresa</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>La ciberseguridad es un campo crucial en la protección de sistemas informáticos, redes y datos digitales.</p>
+        </section>
+    
+        <section id="que-es">
+            <h2>¿Qué es la ciberseguridad?</h2>
+            <a href="https://www.youtube.com/watch?v=SZlnyFujkGE&ab_channel=Agesic" target="_blank">
+                <img src="ciber.jpg" alt="Imagen de Ciberseguridad" />
+                <h1><p>Dale click a la imagen para ver un video</p></h1>
+            </a>
+            <p>La ciberseguridad es el conjunto de técnicas, procesos y medidas de protección diseñadas para salvaguardar los sistemas informáticos, redes, dispositivos y datos digitales de accesos no autorizados, ataques cibernéticos y otras amenazas.</p>
+            <p>Su objetivo principal es asegurar la confidencialidad, integridad y disponibilidad de la información y los sistemas digitales.</p>
+            <p>La ciberseguridad abarca un amplio espectro de actividades, incluyendo la prevención, detección y respuesta a incidentes de seguridad, la gestión de riesgos cibernéticos, el cumplimiento normativo y la capacitación de usuarios.</p>
+            <p>Es un campo esencial para proteger a individuos, organizaciones y la infraestructura crítica en la era digital actual, donde los sistemas y datos se han vuelto altamente dependientes de las tecnologías de la información.</p>
+        </section>
+    
+        <section id="historia">
+            <h2>Historia de la ciberseguridad</h2>
+            <img src="his.jpg" alt="Imagen sobre historia de ciberseguridad">
+            <p>La historia de la ciberseguridad se remonta a los inicios de la computación y las redes de datos, a medida que estas tecnologías fueron evolucionando y convirtiéndose en parte fundamental de nuestra sociedad.</p>
+            <p>Los orígenes de la ciberseguridad se pueden trazar a finales de los años 60 y principios de los 70, cuando los primeros sistemas informáticos comenzaron a interconectarse a través de las primeras redes de comunicación de datos, como ARPANET, precursora de Internet.</p>
+            <p>En esa época, los pioneros de la computación e ingenieros de redes empezaron a enfrentar los primeros desafíos de seguridad, como intrusiones no autorizadas y la necesidad de proteger la información y los recursos compartidos.</p>
+            <p>A lo largo de las décadas siguientes, a medida que las redes se expandieron y las computadoras se volvieron más ubicuas, las amenazas cibernéticas también se fueron sofisticando. Aparecieron los primeros virus informáticos, gusanos, troyanos y otros tipos de malware, lo que impulsó el desarrollo de soluciones de seguridad como firewalls, sistemas de detección de intrusos y software antivirus.</p>
+            <p>En la década de 1990, con la masificación de Internet, la ciberseguridad adquirió una mayor relevancia debido al aumento exponencial de ataques cibernéticos, fraudes en línea y otras actividades maliciosas.</p>
+            <p>A principios del siglo XXI, con la proliferación de dispositivos móviles, la computación en la nube y el advenimiento del Internet de las Cosas, la ciberseguridad se convirtió en una preocupación estratégica a nivel global, con la aparición de nuevos tipos de amenazas y la necesidad de enfoques más comprehensivos para proteger a las organizaciones y la infraestructura crítica.</p>
+            <p>En la actualidad, la ciberseguridad se ha consolidado como un campo interdisciplinario que involucra tecnología, procesos, políticas, educación y concientización, con el objetivo de mantener seguros los entornos digitales en constante evolución.</p>
+        </section>
+    
+        <section id="conceptos">
+            <h2>Conceptos de ciberseguridad</h2>
+            <a href="https://www.youtube.com/watch?v=WjATtFxR2F0" target="_blank">
+                <img src="Ciberseguridad-_cas-800x450.png" alt="Imagen de Ciberseguridad" />
+                <h1><p>Dale click a la imagen para ver un video</p></h1>
+            </a>
+            <p>Malware: Es un término genérico que se refiere a software malicioso diseñado para infiltrarse o dañar un sistema informático sin el consentimiento del usuario. Esto incluye virus, gusanos, troyanos, ransomware, spyware y adware, entre otros.</p>
+            <p>Phishing: Es una técnica utilizada por ciberdelincuentes para engañar a las personas y obtener información confidencial, como contraseñas, información financiera o datos personales.</p>
+            <p>Ransomware: Es un tipo de malware que cifra archivos o bloquea el acceso a sistemas informáticos y luego exige un rescate para restaurar el acceso.</p>
+            <p>Ingeniería social: Es una técnica utilizada por los ciberdelincuentes para manipular psicológicamente a las personas y obtener acceso no autorizado a sistemas o información confidencial.</p>
+            <p>Ataques de denegación de servicio (DDoS): Son ataques diseñados para abrumar un sistema, red o servicio en línea con un gran volumen de tráfico malicioso, lo que resulta en la denegación del servicio legítimo a los usuarios.</p>
+            <p>Estos conceptos son fundamentales para comprender las amenazas cibernéticas que enfrentamos en la actualidad y son la base para desarrollar estrategias efectivas de protección y defensa en el ámbito de la ciberseguridad.</p>
+        </section>
+    
+        <section id="tecnologias">
+            <h2>Tecnologías y Herramientas de Seguridad</h2>
+            <img src="herra.png" alt="Imagen sobre tecnologías de ciberseguridad">
+            <p>Exploramos las tecnologías y herramientas utilizadas para protegerse contra amenazas cibernéticas, como firewalls, sistemas de detección y prevención de intrusiones, antivirus, soluciones de cifrado y autenticación multifactorial.</p>
+            <p>Firewalls: Los firewalls son dispositivos de seguridad que se utilizan para monitorear y controlar el tráfico de red entre una red interna y externa. Pueden ser hardware, software o una combinación de ambos, y actúan como una barrera de protección que filtra el tráfico entrante y saliente según reglas predefinidas.</p>
+            <p>Sistemas de Detección y Prevención de Intrusiones (IDS/IPS): Los IDS son sistemas que monitorean el tráfico de red en busca de actividades sospechosas o maliciosas y generan alertas cuando se detectan posibles intrusiones.</p>
+            <p>Antivirus: Los antivirus son programas diseñados para detectar, prevenir y eliminar software malicioso, como virus, gusanos, troyanos y spyware, de dispositivos informáticos.</p>
+            <p>Cifrado de datos: El cifrado de datos es una técnica utilizada para proteger la confidencialidad de la información mediante la conversión de datos en un formato ilegible que solo puede ser descifrado utilizando una clave o contraseña específica.</p>
+            <p>Autenticación multifactorial: La autenticación multifactorial (MFA) es un método de verificación de identidad que requiere múltiples formas de autenticación antes de permitir el acceso a un sistema o servicio.</p>
+            <p>Gestión de identidad y acceso (IAM): La gestión de identidad y acceso es un conjunto de procesos y tecnologías utilizadas para gestionar y controlar el acceso a recursos digitales dentro de una organización.</p>
+            <p>Estas tecnologías y herramientas son cruciales para la protección de sistemas, redes y datos contra amenazas cibernéticas.</p>
+        </section>
+       
+        <section id="politicas">
+            <h2>Políticas y Procedimientos de Seguridad</h2>
+            <a href=" https://www.youtube.com/watch?v=BIGgP0m9tlE" target="_blank">
+                <img src="poli.png" alt="Imagen de Ciberseguridad" />
+                <h1><p>Dale click a la imagen para ver un video</p></h1>
+            </a>
+            <p>Las políticas y procedimientos de seguridad son directrices y normativas diseñadas para proteger los activos de información de una organización contra amenazas internas y externas.</p>
+            <p>Seguridad de la información: Las políticas de seguridad de la información establecen las directrices para proteger la confidencialidad, integridad y disponibilidad de la información sensible y crítica para el negocio.</p>
+            <p>Gestión de contraseñas: Las políticas de gestión de contraseñas establecen los requisitos y mejores prácticas para la creación, almacenamiento y uso seguro de contraseñas por parte de los empleados.</p>
+            <p>Control de acceso a la red: Las políticas de control de acceso a la red regulan quién tiene acceso a los recursos de red y bajo qué condiciones, utilizando autenticación, autorización y controles de auditoría.</p>
+            <p>Respuesta a incidentes de seguridad: Los procedimientos de respuesta a incidentes de seguridad establecen los pasos a seguir en caso de que ocurra un incidente cibernético, incluyendo la notificación, mitigación y recuperación de los efectos del incidente.</p>
+            <p>Actualizaciones de software: Las políticas de actualización de software establecen la periodicidad y los métodos para aplicar parches de seguridad y actualizaciones de software en todos los sistemas y dispositivos de la organización.</p>
+            <p>Estas políticas y procedimientos son fundamentales para establecer una postura sólida de seguridad cibernética y proteger los activos de información crítica.</p>
+        </section>
+    
+        <section id="procedimientos">
+            <h2>Procedimientos de Incidentes de Seguridad</h2>
+            <img src="ince.jpg" alt="Imagen sobre procedimientos de incidentes de seguridad">
+            <p>Exploramos las tendencias y desafíos emergentes en ciberseguridad, incluyendo ataques dirigidos, vulnerabilidades de día cero, uso de inteligencia artificial en ciberataques, amenazas relacionadas con el Internet de las Cosas (IoT) y regulaciones de privacidad.</p>
+            <p>Ataques dirigidos: Los ataques dirigidos son ataques cibernéticos diseñados para infiltrarse en redes específicas o sistemas informáticos con el objetivo de robar datos confidenciales, causar daños o interrumpir operaciones críticas.</p>
+            <p>Vulnerabilidades de día cero: Las vulnerabilidades de día cero son vulnerabilidades de seguridad recién descubiertas en software, sistemas operativos o dispositivos que aún no tienen una solución o parche disponible.</p>
+            <p>Uso de inteligencia artificial en ciberataques: El uso de inteligencia artificial por parte de los ciberdelincuentes está aumentando, lo que permite la automatización de ataques, la personalización de amenazas y eludir las defensas tradicionales.</p>
+            <p>Amenazas relacionadas con el Internet de las Cosas (IoT): Con la proliferación de dispositivos conectados a Internet, como cámaras de seguridad, electrodomésticos inteligentes y dispositivos médicos, surgen nuevas vulnerabilidades y riesgos de seguridad cibernética.</p>
+            <p>Regulaciones de privacidad: Las regulaciones de privacidad, como el Reglamento General de Protección de Datos (GDPR) en Europa y la Ley de Privacidad del Consumidor de California (CCPA) en los Estados Unidos, imponen requisitos estrictos para la protección y manejo de datos personales.</p>
+            <p>Estos desafíos subrayan la necesidad de una vigilancia continua y la adopción de estrategias avanzadas de ciberseguridad para proteger a individuos, organizaciones y la infraestructura crítica contra amenazas cada vez más sofisticadas.</p>
+        </section>
+    
+        <section id="educacion">
+            <h2>Educación y Formación en Ciberseguridad</h2>
+            <img src="edu.jpg" alt="Imagen sobre educación en ciberseguridad">
+            <p>Exploramos la importancia de la educación y formación en ciberseguridad, incluyendo programas académicos, cursos en línea, certificaciones, eventos profesionales, simulaciones de seguridad y recursos educativos gratuitos.</p>
+            <p>Programas académicos: Numerosas universidades y instituciones ofrecen programas de grado y posgrado en ciberseguridad, que cubren aspectos técnicos, legales y de gestión de la seguridad.</p>
+            <p>Cursos en línea: Plataformas educativas en línea ofrecen cursos especializados en ciberseguridad, que permiten a profesionales y estudiantes adquirir habilidades y conocimientos específicos desde cualquier ubicación y a su propio ritmo.</p>
+            <p>Certificaciones: Las certificaciones en ciberseguridad, como CISSP, CEH, CompTIA Security+, entre otras, validan las habilidades y conocimientos técnicos de los profesionales de la seguridad cibernética y son reconocidas globalmente por la industria.</p>
+            <p>Eventos profesionales: Conferencias, seminarios y eventos específicos de ciberseguridad proporcionan oportunidades para el aprendizaje, la colaboración y la actualización sobre las últimas tendencias y mejores prácticas en la industria.</p>
+            <p>Simulaciones de seguridad: Las simulaciones de seguridad permiten a los profesionales practicar y mejorar sus habilidades en un entorno controlado, simulando ataques y escenarios de ciberseguridad reales sin riesgos para la infraestructura crítica.</p>
+            <p>Recursos educativos gratuitos: Existen numerosos recursos educativos gratuitos, como libros electrónicos, podcasts, webinars y materiales didácticos en línea, que proporcionan información accesible y actualizada sobre ciberseguridad.</p>
+            <p>La educación y formación en ciberseguridad son fundamentales para desarrollar y mantener la capacidad de individuos y organizaciones para enfrentar las amenazas cibernéticas en un entorno digital en constante evolución.</p>
+        </section>
+    
+        <section id="empresas">
+            <h2>Políticas de Seguridad en la Empresa</h2>
+    
+            <h3>1. Seguridad del Dispositivo:</h3>
+            <p>Actualizaciones de Software:<br>
+            Mantener el sistema operativo, aplicaciones y programas actualizados es crucial. Las actualizaciones incluyen correcciones de seguridad que protegen contra vulnerabilidades conocidas. Ignorar las actualizaciones puede dejar los dispositivos expuestos a ataques.</p>
+    
+            <p>Parches de Seguridad:<br>
+            Además de las actualizaciones, existen parches específicos que solucionan problemas concretos. Por ejemplo, pueden cerrar brechas de seguridad en navegadores o componentes del sistema operativo. Aplicar estos parches es esencial para mantener la seguridad.</p>
+    
+            <p>Gestión de Vulnerabilidades:<br>
+            Se deben aplicar medidas correctivas para abordar las vulnerabilidades identificadas.</p>
+    
+            <p>Concienciación del Usuario:<br>
+            Comprender la importancia de las actualizaciones y parches es fundamental. La formación en seguridad informática ayuda a crear una cultura de seguridad en la empresa.</p>
+    
+            <p>Recuerda que la seguridad del dispositivo es responsabilidad de todos. Al seguir estas pautas, contribuirás a proteger la información y la infraestructura de la empresa.</p>
+    
+            <h3>2. Contraseñas Fuertes:</h3>
+            <p>La política de contraseñas fuertes es crucial para la seguridad de los dispositivos y la información en el trabajo remoto.</p>
+            <p>Permíteme explicarte por qué es importante y darte algunos consejos:</p>
+            <ul>
+                <li>Importancia:
+                    <ul>
+                        <li>Protección contra Ataques: Las contraseñas fuertes dificultan que los atacantes adivinen o descifren las credenciales.</li>
+                        <li>Cumplimiento Legal: Muchas regulaciones y leyes exigen prácticas de seguridad, incluyendo el uso de contraseñas sólidas.</li>
+                        <li>Prevención de Brechas: Contraseñas débiles son una puerta abierta a brechas de seguridad.</li>
+                    </ul>
+                </li>
+                <li>Consejos para Contraseñas Fuertes:
+                    <ul>
+                        <li>Longitud: Cuanto más larga, mejor. Al menos 12 caracteres es recomendable.</li>
+                        <li>Combinación de Elementos: Usa letras mayúsculas, minúsculas, números y caracteres especiales.</li>
+                        <li>Evita Palabras Comunes: No uses palabras del diccionario o información personal.</li>
+                        <li>No Reutilices Contraseñas: Cada cuenta debe tener una contraseña única.</li>
+                        <li>Cambia Regularmente: Actualiza tus contraseñas periódicamente.</li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <h3>3. Cifrado de Datos:</h3>
+            <p>Protección de Información Sensible:<br>
+            El cifrado garantiza que los datos sensibles manejados fuera de la oficina permanezcan inaccesibles para personas no autorizadas.</p>
+    
+            <p>Seguridad en la Transmisión de Datos:<br>
+            Protege la información transmitida por internet contra interceptaciones, como los ataques de Man-in-the-Middle.</p>
+    
+            <p>Cumplimiento de Normativas:<br>
+            Ayuda a cumplir regulaciones de protección de datos (GDPR, CCPA), evitando sanciones y protegiendo la reputación.</p>
+    
+            <p>Reducción del Riesgo de Filtraciones:<br>
+            Asegura que los datos en dispositivos perdidos o robados permanezcan inaccesibles sin las credenciales necesarias.</p>
+    
+            <p>Confianza y Reputación:<br>
+            Demuestra compromiso con la seguridad y privacidad, generando confianza entre clientes y socios comerciales.</p>
+    
+            <p>Protección contra Amenazas Internas y Externas:<br>
+            Añade una capa de seguridad contra empleados malintencionados o descuidados, además de ataques externos.</p>
+    
+            <p>Facilidad de Implementación:<br>
+            Muchas herramientas de trabajo remoto ya incluyen cifrado, facilitando su uso y mejorando la seguridad sin necesidad de soluciones adicionales.</p>
+    
+            <h3>4. Uso de Redes Seguras:</h3>
+            <p>Se debe evitar el uso de redes WiFi públicas o no seguras para acceder a recursos de la empresa. Siempre que sea posible, se debe utilizar una conexión VPN.</p>
+    
+            <h3>5. Protección contra Malware:</h3>
+            <p>Los empleados deben tener instalado un software antivirus confiable en sus dispositivos personales y realizar análisis periódicos.</p>
+    
+            <h3>6. Reporte de Incidentes de Seguridad:</h3>
+            <p>Si un empleado sospecha que su dispositivo personal ha sido comprometido o ha experimentado un incidente de seguridad, debe informarlo de inmediato al equipo de TI.</p>
+    
+            <h3>7. Política de Eliminación Segura:</h3>
+            <p>Cuando un empleado deja de trabajar para la empresa o cambia de dispositivo, se debe seguir una política de eliminación segura para borrar todos los datos de su dispositivo personal.</p>
+    
+            <p>Protección de Información Sensible:<br>
+            Los empleados remotos manejan datos confidenciales que, si no se eliminan correctamente, pueden ser recuperados y explotados por terceros no autorizados. La eliminación segura asegura que los datos sean irrecuperables una vez borrados.</p>
+    
+            <p>Prevención de Brechas de Seguridad:<br>
+            Los dispositivos utilizados en el trabajo remoto (laptops, smartphones, unidades de almacenamiento) pueden ser robados o perdidos. Si los datos en estos dispositivos no se eliminan de manera segura, existe el riesgo de que caigan en manos equivocadas.</p>
+        </section>
+        <section id="formulario">
+            <h2>Responde las preguntas y comparte tus opiniones</h2>
+            <p>Después de leer sobre ciberseguridad, te invitamos a responder algunas preguntas para ayudarnos a mejorar nuestro contenido:</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeLP88DzCNsUWQU3XaifScsE-LP_DWXj3jt2L4JpZLJiWxY4A/viewform?usp=sf_link" target="_blank">Accede al formulario de preguntas sobre ciberseguridad</a></p>
+        </section>
+    </div>
+</div>
+
+</body>
+
+</html>
